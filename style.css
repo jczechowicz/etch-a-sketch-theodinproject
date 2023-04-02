@@ -1,0 +1,70 @@
+html {
+    font: 15px sans-serif;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgreen;
+}
+
+.sketchpad {
+    min-height: 400px;
+    width: 400px;
+    background-color: rgb(180, 204, 204);
+    display: flex;
+    flex-direction: column;
+    border: 5px black solid;
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row,
+.column {
+    border: 1px solid rgb(57 90 90 / 12%);
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.controls {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.cntrlButton {
+    margin: 50px 10px 10px 10px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: monospace;
+    border: 5px rgb(236 255 44) solid;
+    background-color: #53a31a;
+    border-radius: 50%;
+}
+
+.controlBtn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.grid {
+    padding: 10px;
+    margin: 10px;
+}
+
+#onOff {
+    font-size: 15px;
+    font-weight: bolder;
+}
